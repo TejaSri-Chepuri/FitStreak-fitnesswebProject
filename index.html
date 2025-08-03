@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Streak App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fit Streak App</h1>
+    </header>
+    <main>
+        <section class="tracker">
+            <h2>Track Your Fitness</h2>
+            <form id="fitness-form">
+                <label for="distance">Distance (km):</label>
+                <input type="number" id="distance" name="distance" required>
+                
+                <label for="time">Time (minutes):</label>
+                <input type="number" id="time" name="time" required>
+                
+                <button type="submit">Calculate Calories</button>
+            </form>
+            <p id="calories-burnt"></p>
+        </section>
+
+        <section class="track-record">
+            <h2>Track Record</h2>
+            <table id="track-record-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Distance (km)</th>
+                        <th>Time (minutes)</th>
+                        <th>Calories Burnt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Track records will be appended here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="streaks">
+            <h2>Your Streaks</h2>
+            <div id="medals">
+                <p>Bronze Medals: <span id="bronze-medals">0</span></p>
+                <p>Silver Medals: <span id="silver-medals">0</span></p>
+                <p>Gold Medals: <span id="gold-medals">0</span></p>
+                <p>Current Streak: <span id="current-streak">0</span> days</p>
+                <p>Longest Streak: <span id="longest-streak">0</span> days</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fit Streak App</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
